@@ -17,7 +17,7 @@
   </dependencies>
   <distributionManagement>
     <repository>
-        <id>myprod</id>
+        <id>myownrepoid</id>
         <name>snapshot</name>
         <url>http://3.108.44.202:8081/repository/mysnapshot/</url>
     </repository>
