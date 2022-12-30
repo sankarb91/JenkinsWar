@@ -16,10 +16,10 @@
     </dependency>
   </dependencies>
   <distributionManagement>
-    <repository>
-        <id>myownrepoid</id>
-        <name>snapshot</name>
-        <url>http://3.108.44.202:8081/repository/prodsnapshot/</url>
-    </repository>
-  </distributionManagement>
+       <repository>
+         <id>mynexus-id</id>
+         <name>myrelease</name>
+         <url>http://44.211.152.126:8081/repository/myrelease/</url>
+       </repository>	   
+  </distributionManagement> 
 </project>
