@@ -15,4 +15,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+       <repository>
+         <id>mynexus-id</id>
+         <name>mysnapshot</name>
+         <url>http://44.211.152.126:8081/repository/mysnapshot/</url>
+       </repository> 
+  </distributionManagement>      
 </project>
