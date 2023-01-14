@@ -1,14 +1,14 @@
-pipeline{
-  agent { label 'mavenbuild' }
+pipeline {
+  agent { label 'maven' }
   stages {  
     stage ("cloning MY repo") {	
 	  steps{
-	    git changelog: false, credentialsId: 'myserver-id', poll: false, url: 'https://github.com/saravananajay/JenkinsWar.git'  	  
+	    git changelog: false,  poll: false, url: 'https://github.com/saravananajay/JenkinsWar.git'  	  
 	  }	
 	}
     stage (" Maven Build") {	
 	  steps{
-	   sh "/opt/maven/bin/mvn clean package"	  	  
+	   sh "/usr/share/apache-maven/mvn clean package"	  	  
 	  }	
 	}	
   }
