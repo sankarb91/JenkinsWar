@@ -1,24 +1,17 @@
 pipeline {
-  agent {
-    label 'masternode'
+  agent { label 'maven' }
+  stages {  
+    stage ("cloning MY repo") {	
+	  steps{
+	    git changelog: false,  poll: false, url: 'https://github.com/saravananajay/JenkinsWar.git'  	  
+	  }	
+	}
+    stage (" Maven Build") {	
+	  steps{
+	   sh "/usr/share/apache-maven/mvn clean package"	  	  
+	  }	
+	}	
+  
   }
-  parameters {
-    string defaultValue: 'prod', description: 'prod|stg|dev', name: 'environmental'
-  }
-  stages {
-    stage('GIT-CLONE') {
-      steps {
-      git credentialsId: 'mydeploy', url: 'https://github.com/saravananajay/JenkinsWar.git' 
-      }
-    }
-    stage('MAVEN-BUILD') {
-      steps {
-      sh  """
-	   
-	  /opt/maven/bin/mvn clean install 
-	   
-	  """
-      }
-    }	
-  }
+
 }
