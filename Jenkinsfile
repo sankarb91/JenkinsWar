@@ -3,7 +3,7 @@ pipeline{
   stages {  
     stage ("cloning MY repo") {	
 	  steps{
-	    git changelog: false, credentialsId: 'myserver-id', poll: false, url: 'https://github.com/saravananajay/JenkinsWar.git'  	  
+	    git changelog: false, credentialsId: 'myserver-id', poll: false, url: 'https://github.com/sankarb91/JenkinsWar/blob/release/Jenkinsfile'  	  
 	  }	
 	}
     stage (" Maven Build") {	
