@@ -8,7 +8,7 @@ pipeline{
 	}
     stage (" Maven Build") {	
 	  steps{
-	   sh "/opt/maven/bin/mvn clean package"	  	  
+	   sh "/usr/share/apache-maven/mvn clean package"	  	  
 	  }	
 	}	
   }
