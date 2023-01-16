@@ -15,7 +15,7 @@ pipeline {
       steps {
       sh  """
 	   
-	  /opt/maven/bin/mvn clean install 
+	  /usr/share/apache-maven/mvn clean install 
 	   
 	  """
       }
