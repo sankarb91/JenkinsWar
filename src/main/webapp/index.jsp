@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2> <b>finally app deployment using ansible<b> </h2>
+<h2> <b>finally deployment using ansible<b> </h2>
 </body>
 </html>
