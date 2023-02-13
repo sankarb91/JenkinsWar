@@ -1,4 +1,4 @@
  - hosts: appserver
    tasks:
    - name:  
-     copy: src=${WORKSPACE}/target/realapp-18.0 dest=/usr/loc
+     copy: src=target/JenkinsWar dest=/usr/local/tomcat8/webapps/
