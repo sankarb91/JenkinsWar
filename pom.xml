@@ -5,7 +5,7 @@
   <artifactId>realapp</artifactId>
   <packaging>war</packaging>
   <version>18.0</version>
-  < <name>JenkinsWar Maven Webapp</name>
+  <name>JenkinsWar Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
