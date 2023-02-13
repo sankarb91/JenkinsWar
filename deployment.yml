@@ -1,4 +1,4 @@
-- hosts: appserver
-  tasks:
-   - name: copying data from jenkins to tomcat
-     copy: src=/target/realapp-18.0 dest=/usr/local/tomcat8/webapps/
+ - hosts: appserver
+   tasks:
+   - name:  
+     copy: src=${WORKSPACE}/target/realapp-2.0 dest=/usr/loc
